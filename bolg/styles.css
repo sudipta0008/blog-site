@@ -1,0 +1,191 @@
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 350px;
+    color: #2369a6;
+    text-align: center;
+  }
+  
+  
+  h1 {
+    font-size: 26px;
+    margin: 0;
+    font-family: "Montez",cursive;
+    position: absolute;
+    top:10px;
+    left:10px;
+  }
+  
+  h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color:black;
+    position: absolute;
+    top:25px;
+    left:10px;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #9f9a30;
+  }
+  .options {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .options button {
+    background-color: #2616a4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    color: #f1ebeb;
+  }
+  .invisible {
+    display: none;
+  }
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(16, 14, 14, 0.6);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Add the following styles to center the modal on small screens */
+  @media (max-width: 600px) {
+    .modal-content {
+      width: 90%;
+    }
+  }
+  .close-modal {
+    position: relative;
+    top:10px;
+    right:10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-modal:hover {
+    color: #625f5f;
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+    .signup-button {
+    background-color: green;
+    color: rgb(244, 238, 238);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .signup-button:hover {
+    background-color: darkgreen;
+  }
+  .line {
+    border: none;
+    border-top: 1px solid #171717;
+    margin-bottom: 20px;
+  }
+  #createpost-modal .modal-content {
+    width: 800px;
+  }
+  
+  #createpost-modal h3 {
+    margin-bottom: 20px;
+  }
+  
+  #createpost-modal form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #createpost-modal form input,
+  #createpost-modal form textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #createpost-modal form textarea {
+    height: 150px;
+  }
+  
+  #create-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #create-button:hover {
+    background-color: darkgreen;
+  }
+  
+  
+  
+  
+  

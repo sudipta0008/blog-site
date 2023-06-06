@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez">
+</head>
+<body>
+  <header>
+    <h1>ScriBBler</h1>
+    <h2>Explore, Imagine, Create</h2>
+    <button id="ALL POST-btn"onclick="window.location.href = 'index1.html';">All Post</button>
+    <button id="CREAT POST-btn">Creat Post</button>
+    <div class="options">
+    <button id="option1-btn">sign up</button>
+    <button id="option2-btn">sign in</button>
+</header>
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span id="signup-close" class="modal-close">&times;</span>
+      <h3>Get Started</h3>
+      <hr class="line">
+      <form action="" class="signup-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <p id="error-message" class="error-message"></p>
+        <button type="submit"class="signup-button">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div id="signin-modal" class="modal">
+    <div class="modal-content">
+        <span id="signin-close" class="modal-close">&times;</span>
+      <h4>WELCOME BACK!</h4>
+      <hr class="line">
+      <form action="" class="signin-form">
+        <input type="text" id="signin-username" placeholder="Enter your username" required>
+        <input type="password" id="signin-password" placeholder="Enter your password" required>
+        <button type="submit"class="signup-button">Sign In</button>
+        <p>Not a member? <a id="signup-link" href="#">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+  <div id="createpost-modal" class="modal">
+    <div class="modal-content">
+      <span id="createpost-close" class="modal-close">&times;</span>
+      <h3>Pen Your Post</h3>
+      <hr class="line">
+      <form action="" class="createpost-form">
+        <label for="post-title">Title</label>
+        <input type="text" id="post-title" placeholder="Enter the title of your post" required>
+        
+        <label for="post-contents">Contents</label>
+        <textarea id="post-contents" placeholder="Enter the contents of your post" required></textarea>
+        
+        <button type="submit" id="create-button">Create</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <!-- Rest of the content goes here -->
+  <script src="script.js"></script>
+</body>
+</html>

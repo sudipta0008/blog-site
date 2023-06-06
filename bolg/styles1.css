@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .main-container{
+    background-color: #ffeedd;
+  }
+  header {
+    background-color:#ffeedd;
+    /* background-size: 100px; */
+    /* background-position: center; */
+    /* padding: 350px; */
+    color: #2369a6;
+    text-align: center;
+  }
+  
+  
+  h1 {
+    font-size: 26px;
+    margin: 0;
+    font-family: "Montez",cursive;
+    position: absolute;
+    top:10px;
+    left:10px;
+  }
+  h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color:black;
+    position: absolute;
+    top:25px;
+    left:10px;
+  }
+  .options {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .options button {
+    background-color: #2616a4;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    color: #f1ebeb;
+  }
+  .post-segment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: space-between;
+    padding: 10px;
+    margin: 30px;
+  }
+  
+  .post {
+    width: 46%;
+    border: 2px solid black;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .post:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .username {
+    font-weight: bold;
+    margin-right:10px; 
+  }
+  
+  .delete-icon {
+    cursor: pointer;
+  }
+  
+  .post-title {
+    margin-top: 10px;
+    float: top;
+  }
+  
+  .post-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    width: 300px;
+    margin: 200px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+    padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  }
+  .modal-buttons button {
+    margin: 0 10px;
+  }
+  #yes-button {
+    background-color: green;
+    color: white;
+  }
+  
+  #no-button {
+    background-color: red;
+    color: white;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .modal-close {
+    display: flex;
+    cursor: pointer;
+  }
+  .dots-icon {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+.trash-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+  .signup-button {
+  background-color: green;
+  color: rgb(244, 238, 238);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.signup-button:hover {
+  background-color: darkgreen;
+}
+.line {
+  border: none;
+  border-top: 1px solid #171717;
+  margin-bottom: 20px;
+}
+  
+  
+  
+  
+  
